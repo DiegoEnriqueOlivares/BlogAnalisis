@@ -1,0 +1,68 @@
+body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: 
+    auto 1fr auto;
+
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    /*background-color: #f4f4f4;*/
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: .3rem;
+}
+/*GREGADO PARA REDUIR EL TAMAÑO*/
+header h1{
+     font-size: 1.5rem;
+     margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.post h2 {
+    color: #333;
+}
+.post p {
+    color: #666;
+}
+footer {
+    display: flex;
+    justify-content: center;/*alineamos horizontalmente*/
+    align-items: flex-end;/*alineamos a la parte inferior*/
+    text-align: center;
+    padding: .5rem; /*reducimos el pafing*/
+    background: #333;
+    color: white;
+    margin-top: 20px;
+    /*colocamos el footer del tamaño del texto*/
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+/*AGREGADO PARA REDUCIR EL TAMAÑO*/
+footer p{
+    font-size: 0.7rem; /*reducimo el tamaño del footer*/
+    margin: 0;
+}
