@@ -5,24 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Análisis Numérico</title>
     <link rel="stylesheet" href="Style.css">
-</head>
+</head> 
 
 <body>
     <header>
         <h1>Blog de Análisis Numérico</h1>
     </header>
-    <div class="container">
+    
+    <div class="tabs">
+        <button id="btnInicio" class="tab-link" onclick="openTab(event, 'inicio')">&#x1F3E0;</button>
+        <button class="tab-link" onclick="openTab(event, 'tema1')">Título del tema 1</button>
+        <button class="tab-link" onclick="openTab(event, 'tema2')">Título del tema 2</button>
+        <button class="tab-link" onclick="openTab(event, 'tema3')">Título del tema 3</button>
+        <button class="tab-link" onclick="openTab(event, 'tema4')">Título del tema 4</button>
+        <button class="tab-link" onclick="openTab(event, 'tema5')">Título del tema 5</button>
+        <button class="tab-link" onclick="openTab(event, 'tema6')">Título del tema 6</button>
+    </div>
+
+    <div class="tab-content" id="inicio">
         <div class="post">
-            <h2>Título del Post 1</h2>
+            <h2>INICIO</h2>
+            <p>Cnotenido inicial de Análisis numérico...</p>
+        </div>
+    </div>
+
+    <div class="tab-content" id="tema1">
+        <div class="post">
+            <h2>Titulo del tema 1</h2>
             <p>Contenido del blog sobre análisis numérico...</p>
         </div>
+    </div>
+
+    <div class="tab-content" id="tema2">
         <div class="post">
-            <h2>Título del Post 2</h2>
+            <h2>Título del tema 2</h2>
             <p>Otro contenido interesante sobre análisis numérico...</p>
         </div>
     </div>
+
+    <div class="tab-content" id="tema3">
+        <div class="post">
+            <h2>Título del tema 3</h2>
+            <p>Tema numero 3 sobre análisis numérico...</p>
+        </div>
+    </div>
+
+    <div class="tab-content" id="tema4">
+        <div class="post">
+            <h2>Título del tema 4</h2>
+            <p>Tema numero 4 sobre análisis numérico...</p>
+        </div>
+    </div>
+
+    <div class="tab-content" id="tema5">
+        <div class="post">
+            <h2>Título del tema 5</h2>
+            <p>Tema numero 5 sobre análisis numérico...</p>
+        </div>
+    </div>
+
+    <div class="tab-content" id="tema6">
+        <div class="post">
+            <h2>Título del tema 6</h2>
+            <p>Tema numero 6 sobre análisis numérico...</p>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2025 Blog de Análisis Numérico</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
