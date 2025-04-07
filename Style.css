@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("imagenes/fondo.jpg");
+    background-image: url("sources/imagenes/fondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ footer {
 }
 /*AGREGADO PARA REDUCIR EL TAMAÑO*/
 footer p{
-    font-size: 0.7rem; /*reducimo el tamaño del footer*/
+    font-size: 0.7rem;
     margin: 0;
 }
 
@@ -94,7 +94,8 @@ footer p{
 }
 
 .tab-link.active {
-    color: #ebdcdc; /*Color del texto cuando está activo */
+    color: #ebdcdc; /* Color del texto de la pestaña activa */
+    /*border-bottom: 2px solid #FF6347; /* Color de la línea inferior de la pestaña activa */
 }
 .tab-link:focus {
     outline: none;
@@ -104,15 +105,21 @@ footer p{
 
 /* Estilo para el contenido de las pestañas */
 .tab-content {
-    display: none; /* El contenido está oculto por defecto */
+    display: none; 
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Ajusta el margen superior para separar el contenido de los botones */
-    width: 80%; /* Hace que el contenido ocupe un 80% del ancho de la pantalla */
-    margin-left: auto; /* Centra el contenido horizontalmente */
-    margin-right: auto; /* Centra el contenido horizontalmente */
-    border-radius: 5px; /* Redondea las esquinas del contenido */
+    margin-top: 2rem; /* Ajusta el margen superior para separar el contenido de los botones */
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 10px;
+    
+    max-width: 100000px; /* Limita el ancho para que no se vea demasiado grande */
+    min-height: 70vh; /* Define una altura mínima para el contenido */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 /* Muestra el contenido por defecto*/
 .tab-content.active {
